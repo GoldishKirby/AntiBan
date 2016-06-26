@@ -18,7 +18,7 @@
 
       @mkdir($this->getDataFolder());
 
-      $this->cfg = new Config($this->getDataFolder . "config.yml", Config::YAML, array("players" => array));
+      $this->cfg = new Config($this->getDataFolder . "config.yml", Config::YAML, array("players" => array()));
 
       $this->getLogger()->info(TF::GREEN . "Enabled.");
 
