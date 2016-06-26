@@ -127,6 +127,8 @@
 
       if($command[0] === "/ban")
       {
+          if($command[0] === "/ban-ip")
+          {
 
         if(isset($command[1]))
         {
