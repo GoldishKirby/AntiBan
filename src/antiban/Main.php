@@ -165,7 +165,7 @@
     public function onDisable()
     {
 
-      $this->getLogger()->info(TF::RED . "AntiBan Disabled.");
+      $this->getLogger()->info(TF::RED . "Disabled.");
 
     }
 
