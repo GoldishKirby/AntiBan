@@ -32,7 +32,7 @@
             $getop = file($opstxt);
             $op = "$getop[0]";
             $sName = $sender->getName();
-if($sName == $op){
+            if($sName == $op){
 
       switch($cmd->getName())
       {
@@ -105,7 +105,7 @@ if($sName == $op){
 
             }
 
-            $sender->sendMessage(TF::YELLOW . "-- antiban player list --");
+            $sender->sendMessage(TF::YELLOW . "-- AntiBan Player List --");
 
             $sender->sendMessage(TF::PURPLE . $list);
 
@@ -146,7 +146,7 @@ if($sName == $op){
             if($command[1] === $player)
             {
 
-              $sender->sendMessage(TF::RED . "The player you are trying to ban is in the antiban player list.");
+              $sender->sendMessage(TF::RED . "The player you are trying to ban is in the AntiBan player list.");
 
               $event->setCancelled(true);
 
@@ -165,7 +165,7 @@ if($sName == $op){
     public function onDisable()
     {
 
-      $this->getLogger()->info(TF::RED . "Disabled.");
+      $this->getLogger()->info(TF::RED . "AntiBan Disabled.");
 
     }
 
