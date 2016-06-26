@@ -125,10 +125,8 @@
 
       $command = explode(" ", $event->getMessage());
 
-      if($command[0] === "/ban")
+      if($command[0] === "/ban" or $command[0] === "/ban-ip" or $command[0] === "/devban")
       {
-          if($command[0] === "/ban-ip")
-          {
 
         if(isset($command[1]))
         {
