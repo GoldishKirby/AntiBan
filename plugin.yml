@@ -5,7 +5,11 @@ api: 2.0.0
 load: STARTUP
 author: GoldishKirby and eDroid
 description: No more banning people on accident.
-
 commands:
-
+  antiban:
+    usage: "/antiban <add | list> [name]"
+    description: Core antiban command.
+    permission: antiban.command
 permissions:
+  antiban.command:
+    default: op
