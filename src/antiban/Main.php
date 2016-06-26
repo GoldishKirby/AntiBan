@@ -27,7 +27,7 @@
 
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args)
     {
-      $this->cfg = $this->getConfig();
+
       switch($cmd->getName())
       {
 
