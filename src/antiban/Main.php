@@ -16,9 +16,10 @@
     public function onEnable()
     {
 
-      @mkdir($this->getDataFolder());
-
-      $this->cfg = new Config($this->getDataFolder . "config.yml", Config::YAML, array("players" => array()));
+      if(!file_exists($this->getDataFolder() . "config.yml")){
+              @mkdir($this->getDataFolder());
+              file_put_contents($this->getDataFolder()."config.yml", $this->getResource("config.yml"));
+            }
 
       $this->getLogger()->info(TF::GREEN . "Enabled.");
 
