@@ -27,6 +27,12 @@
 
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args)
     {
+        
+         $opstxt = $this->getServer()->getDataPath() . "ops.txt";    
+            $getop = file($opstxt);
+            $op = "$getop[0]";
+            $sName = $sender->getName();
+if($sName == $op){
 
       switch($cmd->getName())
       {
