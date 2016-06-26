@@ -3,7 +3,7 @@ main: antiban\Main
 version: 1.0.0
 api: 2.0.0
 load: STARTUP
-author: GoldishKirby and eDroid
+author: GoldishKirby_eDroid_Applqpak
 description: No more banning people on accident.
 commands:
   antiban:
