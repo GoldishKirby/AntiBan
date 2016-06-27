@@ -53,7 +53,7 @@
             if(isset($args[1]))
             {
 
-              $name = $args[1]
+              $name = $args[1];
 
               $players = $this->cfg->get("players");
 
