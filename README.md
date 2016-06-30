@@ -1,3 +1,7 @@
-# antiban
+# AntiBan
 
-Made by me(the noob) and eDroid and Applqpak!
+A plugin for your PocketMine Server!
+
+This plugin was made by GoldishKirby, eDroidPlayz and Applqpak
+
+Most of the work was done by them.
