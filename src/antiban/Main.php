@@ -21,7 +21,7 @@
             }
 
       $this->getLogger()->info(TF::GREEN . "Enabled.");
-      $server->getPluginManager()->registerEvents($this , $this)
+      $server->getPluginManager()->registerEvents($this , $this);
 
     }
 
