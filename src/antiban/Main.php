@@ -8,7 +8,8 @@
   use pocketmine\utils\Config;
   use pocketmine\command\Command;
   use pocketmine\command\CommandSender;
-  use pockemtine\Player;
+  use pocketmine\Player;
+  use pocketmine\Server;
   
   class Main extends PluginBase implements Listener
   {
@@ -22,9 +23,7 @@
 
       $this->getLogger()->info(TF::GREEN . "Enabled.");
       $server->getPluginManager()->registerEvents($this , $this);
-
     }
-
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args)
     {
         
@@ -129,7 +128,6 @@
 
     public function onCommandPreprocess(PlayerCommandPreprocessEvent $event)
     {
-
       $command = explode(" ", $event->getMessage());
 
       if($command[0] === "/ban" or $command[0] === "/ban-ip" or $command[0] === "/devban")
