@@ -22,7 +22,7 @@
             }
 
       $this->getLogger()->info(TF::GREEN . "Enabled.");
-      $server->getPluginManager()->registerEvents($this , $this);
+      $this->getServer()->getPluginManager()->registerEvents($this , $this);
     }
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args)
     {
